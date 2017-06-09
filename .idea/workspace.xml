@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ce84a710-97a6-4b8f-ae7b-e46c8e3f8076" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Project/src/main/webapp/resources/images/film.png" afterPath="$PROJECT_DIR$/Project/src/main/webapp/resources/icons/film.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/src/main/webapp/pages/searchResult-plain.xhtml" afterPath="$PROJECT_DIR$/Project/src/main/webapp/pages/searchResult-plain.xhtml" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,8 +40,8 @@
       <file leaf-file-name="searchResult-plain.xhtml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Project/src/main/webapp/pages/searchResult-plain.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="128" column="207" selection-start-line="128" selection-start-column="160" selection-end-line="128" selection-end-column="207" />
+            <state relative-caret-position="336">
+              <caret line="286" column="33" selection-start-line="286" selection-start-column="33" selection-end-line="286" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -79,6 +79,7 @@
       <list>
         <option value="$PROJECT_DIR$/Project/src/main/webapp/pages/home.xhtml" />
         <option value="$PROJECT_DIR$/Project/src/main/webapp/pages/home.html" />
+        <option value="$PROJECT_DIR$/Project/src/main/webapp/pages/searchResult-plain.xhtml" />
       </list>
     </option>
   </component>
@@ -872,12 +873,12 @@
       <option name="presentableId" value="Default" />
       <updated>1496940584312</updated>
       <workItem from="1496940585802" duration="471000" />
-      <workItem from="1496997937031" duration="1802000" />
+      <workItem from="1496997937031" duration="6817000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2273000" />
+    <option name="totallyTimeSpent" value="7288000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -993,8 +994,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Project/src/main/webapp/pages/searchResult-plain.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="128" column="207" selection-start-line="128" selection-start-column="160" selection-end-line="128" selection-end-column="207" />
+        <state relative-caret-position="336">
+          <caret line="286" column="33" selection-start-line="286" selection-start-column="33" selection-end-line="286" selection-end-column="33" />
           <folding />
         </state>
       </provider>
