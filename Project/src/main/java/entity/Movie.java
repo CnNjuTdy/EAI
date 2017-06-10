@@ -3,8 +3,11 @@ package entity;
 /**
  * Created by Tondiyee on 2017/6/10.
  */
-public class MaoyanMovie {
+public class Movie {
     private int id;
+    private int maoyanId;
+    private int taobaoId;
+    private int gewalaId;
     private String name;
     private String description;
     private String director;
@@ -13,18 +16,7 @@ public class MaoyanMovie {
     private int isIMax;
     private String imgUrl;
 
-    public MaoyanMovie() {
-    }
-
-    public MaoyanMovie(int id, String name, String description, String director, String star, boolean is3d, boolean isIMax, String imgUrl) {
-        this.id = id;
-        this.name = name;
-        this.description = description;
-        this.director = director;
-        this.star = star;
-        this.is3d = is3d ? 1 : 0;
-        this.isIMax = isIMax ? 1 : 0;
-        this.imgUrl = imgUrl;
+    public Movie() {
     }
 
     public int getId() {
@@ -33,6 +25,30 @@ public class MaoyanMovie {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public int getMaoyanId() {
+        return maoyanId;
+    }
+
+    public void setMaoyanId(int maoyanId) {
+        this.maoyanId = maoyanId;
+    }
+
+    public int getTaobaoId() {
+        return taobaoId;
+    }
+
+    public void setTaobaoId(int taobaoId) {
+        this.taobaoId = taobaoId;
+    }
+
+    public int getGewalaId() {
+        return gewalaId;
+    }
+
+    public void setGewalaId(int gewalaId) {
+        this.gewalaId = gewalaId;
     }
 
     public String getName() {
@@ -83,7 +99,6 @@ public class MaoyanMovie {
         this.isIMax = isIMax;
     }
 
-
     public String getImgUrl() {
         return imgUrl;
     }
@@ -94,8 +109,11 @@ public class MaoyanMovie {
 
     @Override
     public String toString() {
-        return "MaoyanMovie{" +
+        return "Movie{" +
                 "id=" + id +
+                ", maoyanId=" + maoyanId +
+                ", taobaoId=" + taobaoId +
+                ", gewalaId=" + gewalaId +
                 ", name='" + name + '\'' +
                 ", description='" + description + '\'' +
                 ", director='" + director + '\'' +

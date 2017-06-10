@@ -5,6 +5,8 @@ package entity;
  */
 public class MaoyanPlan {
     private String id;
+    private int cId;
+    private int mId;
     private String cName;
     private String mName;
     private String date;
@@ -13,8 +15,13 @@ public class MaoyanPlan {
     private String th;
     private double price;
 
-    public MaoyanPlan(String id,String cName, String mName, String date, String start, String end, String th, double price) {
+    public MaoyanPlan() {
+    }
+
+    public MaoyanPlan(String id, int cId, int mId, String cName, String mName, String date, String start, String end, String th, double price) {
         this.id = id;
+        this.cId = cId;
+        this.mId = mId;
         this.cName = cName;
         this.mName = mName;
         this.date = date;
@@ -30,6 +37,22 @@ public class MaoyanPlan {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public int getcId() {
+        return cId;
+    }
+
+    public void setcId(int cId) {
+        this.cId = cId;
+    }
+
+    public int getmId() {
+        return mId;
+    }
+
+    public void setmId(int mId) {
+        this.mId = mId;
     }
 
     public String getcName() {
@@ -92,6 +115,8 @@ public class MaoyanPlan {
     public String toString() {
         return "MaoyanPlan{" +
                 "id='" + id + '\'' +
+                ", cId=" + cId +
+                ", mId=" + mId +
                 ", cName='" + cName + '\'' +
                 ", mName='" + mName + '\'' +
                 ", date='" + date + '\'' +

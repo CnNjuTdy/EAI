@@ -3,22 +3,28 @@ package entity;
 /**
  * Created by Tondiyee on 2017/6/10.
  */
-public class MaoyanCinema {
+public class Cinema {
     private int id;
+    private int maoyanId;
+    private int taobaoId;
+    private int gewalaId;
     private String name;
     private String area;
     private String address;
-    private int price;
+    private double price;
 
-    public MaoyanCinema(int id, String name, String area, String address, int price) {
+    public Cinema() {
+    }
+
+    public Cinema(int id, int maoyanId, int taobaoId, int gewalaId, String name, String area, String address, double price) {
         this.id = id;
+        this.maoyanId = maoyanId;
+        this.taobaoId = taobaoId;
+        this.gewalaId = gewalaId;
         this.name = name;
         this.area = area;
         this.address = address;
         this.price = price;
-    }
-
-    public MaoyanCinema() {
     }
 
     public int getId() {
@@ -27,6 +33,30 @@ public class MaoyanCinema {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public int getMaoyanId() {
+        return maoyanId;
+    }
+
+    public void setMaoyanId(int maoyanId) {
+        this.maoyanId = maoyanId;
+    }
+
+    public int getTaobaoId() {
+        return taobaoId;
+    }
+
+    public void setTaobaoId(int taobaoId) {
+        this.taobaoId = taobaoId;
+    }
+
+    public int getGewalaId() {
+        return gewalaId;
+    }
+
+    public void setGewalaId(int gewalaId) {
+        this.gewalaId = gewalaId;
     }
 
     public String getName() {
@@ -53,18 +83,21 @@ public class MaoyanCinema {
         this.address = address;
     }
 
-    public int getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 
     @Override
     public String toString() {
-        return "MaoyanCinema{" +
+        return "Cinema{" +
                 "id=" + id +
+                ", maoyanId=" + maoyanId +
+                ", taobaoId=" + taobaoId +
+                ", gewalaId=" + gewalaId +
                 ", name='" + name + '\'' +
                 ", area='" + area + '\'' +
                 ", address='" + address + '\'' +
