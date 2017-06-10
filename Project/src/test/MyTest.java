@@ -8,6 +8,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import spider.GewaraSpider;
 import spider.MaoyanSpider;
+import spider.TaopiaopiaoSpider;
 
 import java.io.IOException;
 import java.util.List;
@@ -27,7 +28,11 @@ public class MyTest {
     private GewaraSpider spider2;
 
     @Autowired
+    private TaopiaopiaoSpider taobaospider;
+
+    @Autowired
     private CinemaDao dao2;
+
 
 //    @Test
 //    public void test1() {
@@ -82,6 +87,14 @@ public class MyTest {
     public void test6(){
         try {
             spider2.getPlans();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    @Test
+    public void test7(){
+        try {
+            taobaospider.getPlans();
         } catch (IOException e) {
             e.printStackTrace();
         }

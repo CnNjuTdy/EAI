@@ -1,9 +1,9 @@
 package entity;
 
 /**
- * Created by Tondiyee on 2017/6/10.
+ * Created by fulinhua on 2017/6/10.
  */
-public class GewalaPlan {
+public class TaoppPlan {
     private int id;
     private int cId;//电影院id
     private int mId;//电影id
@@ -15,10 +15,10 @@ public class GewalaPlan {
     private String th;
     private double price;
 
-    public GewalaPlan() {
+    public TaoppPlan() {
     }
 
-    public GewalaPlan(int id, int cId, int mId, String cName, String mName, String date, String start, String end, String th, double price) {
+    public TaoppPlan(int id, int cId, int mId, String cName, String mName, String date, String start, String end, String th, double price) {
         this.id = id;
         this.cId = cId;
         this.mId = mId;
@@ -126,4 +126,5 @@ public class GewalaPlan {
                 ", price=" + price +
                 '}';
     }
+
 }

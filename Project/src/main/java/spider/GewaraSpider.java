@@ -58,15 +58,27 @@ public class GewaraSpider {
             Elements ems = li.select("em");
             Elements labels = li.select("label");
             Elements bs = li.select("b");
-
+            if(bs.size()>0)
             gewalaPlan.setStart(bs.get(0).text());
+            if(ems.size()>0)
             gewalaPlan.setEnd(ems.get(0).text());
-            gewalaPlan.setPrice(Double.parseDouble(bs.get(1).text()));
+if(bs.size()>0)
+           gewalaPlan.setPrice(Double.parseDouble(getNoBlank(bs.get(1).text())));
+if(labels.size()>0)
             gewalaPlan.setTh(labels.get(0).text());
             result.add(gewalaPlan);
         }
         return result;
     }
+public static String getNoBlank(String input){
+String s="";
+for(int i=0;i<input.length()-1;i++){
+    s+=String.valueOf(input.charAt(i));
+}
+        return s;
+
+
+}
 
 
     public void getPlans() throws IOException {
@@ -83,8 +95,7 @@ public class GewaraSpider {
                 List<GewalaPlan> list = getData(params);
                 // TODO: 2017/6/10  doc转plan
                 for (GewalaPlan ge : list)
-                    System.out.println(ge.toString());
-                //  dao3.save(plan);
+                   dao3.save(ge);
 
             }
         }
