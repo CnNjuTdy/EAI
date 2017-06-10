@@ -35,11 +35,22 @@ public class MyTest {
     @Test
     public void test2(){
         try {
-            spider.getAllCinemas();
+            spider.getPlans();
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
+
+    @Test
+    public void testMaoyan(){
+        try {
+            spider.getPlans();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
 
     @Test
     public void test3(){
