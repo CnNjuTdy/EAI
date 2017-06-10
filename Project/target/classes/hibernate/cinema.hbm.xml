@@ -1,9 +1,11 @@
 <hibernate-mapping package="entity">
-    <class name="MaoyanCinema" table="maoyan_cinema">
+    <class name="Cinema" table="cinema">
         <id name="id" column="id"/>
+        <property name="maoyanId" column="maoyan_id"/>
+        <property name="taobaoId" column="taobao_id"/>
+        <property name="gewalaId" column="gewala_id"/>
         <property name="name" column="name"/>
         <property name="address" column="addr"/>
-        <property name="area" column="area"/>
         <property name="price" column="price"/>
     </class>
 </hibernate-mapping>

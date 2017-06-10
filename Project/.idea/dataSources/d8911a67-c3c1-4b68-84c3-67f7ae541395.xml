@@ -115,12 +115,15 @@
     </column>
     <column id="46" parent="15" name="maoyan_id">
       <data-type>int(11)|0</data-type>
+      <default-expression>&apos;-1&apos;</default-expression>
     </column>
     <column id="47" parent="15" name="taobao_id">
       <data-type>int(11)|0</data-type>
+      <default-expression>&apos;-1&apos;</default-expression>
     </column>
     <column id="48" parent="15" name="gewala_id">
       <data-type>int(11)|0</data-type>
+      <default-expression>&apos;-1&apos;</default-expression>
     </column>
     <column id="49" parent="15" name="name">
       <data-type>varchar(255)|0</data-type>
