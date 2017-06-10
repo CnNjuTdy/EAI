@@ -153,7 +153,13 @@ public class MaoyanSpider {
                             cinemaName, movieName, show.getString("dt"), show.getString("tm"),
                             show.getString("end"), show.getString("th"), price);
                     System.out.println(plan);
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
                 }
+
 
             }
         }
