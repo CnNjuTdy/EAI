@@ -52,8 +52,6 @@
         <th class="center">格瓦拉价格</th>
         <th class="center">淘宝场次</th>
         <th class="center">淘宝价格</th>
-
-
     </tr>
 
 

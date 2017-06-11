@@ -4,6 +4,7 @@ import dao.CinemaDao;
 import dao.GewalaPlanDao;
 import dao.MovieDao;
 import entity.Cinema;
+import entity.CommonData;
 import entity.GewalaPlan;
 import entity.Movie;
 import org.jsoup.Jsoup;
@@ -108,4 +109,7 @@ for(int i=0;i<input.length()-1;i++){
     }
 
 
+    public GewalaPlan getSinglePlanByCommonData(CommonData common) {
+        return dao3.findPlanByCommonData(common);
+    }
 }

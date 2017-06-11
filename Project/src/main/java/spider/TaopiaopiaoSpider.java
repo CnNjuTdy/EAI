@@ -106,4 +106,8 @@ public class TaopiaopiaoSpider {
     public  TaoppPlan getSinglePlanByCommonData(CommonData common) {
         return dao3.findPlanByCommonData(common);
     }
+
+    public List<TaoppPlan> getPlansByCinema(String cinema) {
+        return dao3.findByCinemaName(cinema);
+    }
 }

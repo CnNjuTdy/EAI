@@ -50,8 +50,40 @@ public class SearchCinemaService {
             uniformList.add(uniform);
         }
 
+        List<TaoppPlan> taoppPlanList=taopiaopiaoSpider.getPlansByCinema(cinema);
+        for(TaoppPlan taoppPlan:taoppPlanList){
+            CommonData common=new CommonData();
+            common.setMovie_name(taoppPlan.getmName());
+            common.setCinema_name(taoppPlan.getcName());
+            common.setDate(taoppPlan.getDate());
+            common.setStart(taoppPlan.getStart());
+            GewalaPlan ge=gewaraSpider.getSinglePlanByCommonData(common);
+            if(ge==null){
+                UniformPlan uniform=new UniformPlan();
+                uniform.setStart(taoppPlan.getStart());
+                uniform.setDate(taoppPlan.getDate());
+                uniform.setmName(taoppPlan.getmName());
+                uniform.setcName(taoppPlan.getcName());
+                uniform.setEnd(formatDate(taoppPlan.getEnd()));
+                uniform.setTaobao_price(taoppPlan.getPrice());
+                uniform.setTaobao_th(taoppPlan.getTh());
+                uniform.setGewala_price(-1);
+                uniform.setGewala_th("无");
+                uniformList.add(uniform);
+            }
+
+        }
+
 
         return uniformList;
+    }
+
+
+    public static String formatDate(String input){
+
+
+
+        return input.substring(6,input.length());
     }
 
 }

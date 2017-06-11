@@ -30,4 +30,10 @@ public class TaoppPlanDao extends BaseDao {
         List<TaoppPlan> list=findBySQL("select * from taobao_plan where m_name=? and c_name=? and start=? and date=?",parms, TaoppPlan.class);
         return list.size()==0?null:list.get(0);
     }
+
+    public List<TaoppPlan> findByCinemaName(String cinema){
+        String[] parms=new String[1];
+        parms[0]=cinema;
+        return findBySQL("select * from taobao_plan where c_name=?",parms, TaoppPlan.class);
+    }
 }
