@@ -24,8 +24,30 @@
         <!--</tr>-->
         <tr><br><br></tr>
         <tr>
-            <td><c:forEach items="${data}" var="list">
-                <a>${list.toString()}
+            <%--<a>${data.get(0).mName}</a>--%>
+            <br>
+            <a>影院名称</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a>放映日期</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a>开始时间</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a>结束时间</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a>格瓦拉场次</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a>格瓦拉价格</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a>淘宝场次</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a>淘宝价格</a>
+            <br>
+        </tr>
+
+        <tr>
+            <%--<a>${data.size()}</a>--%>
+            <td><c:forEach items="${datalist}" var="list">
+                <a>${list.cName}</a>&nbsp;
+                <a>${list.date}</a>&nbsp;
+                <a>${list.start}</a>&nbsp;
+                <a>${list.end}</a>&nbsp;
+                <a>${list.gewala_th}</a>&nbsp;
+                <a><font color="red" size="10px">${list.gewala_price}</a>&nbsp;
+                <a>${list.taobao_th}</a>&nbsp;
+                <a><font color="red" size="10px">${list.taobao_price}</a>&nbsp;
                 <%--机构名：${list.name}&nbsp;&nbsp;&nbsp;&nbsp;--%>
                 <br>
                 <%--<h4>会员级别：${list.level}</h4>&nbsp;&nbsp;&nbsp;&nbsp;--%>

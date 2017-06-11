@@ -70,11 +70,11 @@
 <br>
 
 <div id="film_list">
-    <a id="wonder" href="/movie/getPlan?movieName=">神奇女侠</a>&nbsp;&nbsp;&nbsp;
-    <a id="pirates" href="/movie/getPlan?movieName=">加勒比海盗5：死无对证</a>&nbsp;&nbsp;&nbsp;
-    <a id="mummy" href="/movie/getPlan?movieName=">新木乃伊</a>&nbsp;&nbsp;&nbsp;
+    <a id="wonder" href="/movie/getPlan.html?movieName=神奇女侠">神奇女侠</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a id="pirates" href="/movie/getPlan.html?movieName=加勒比海盗5：死无对证">加勒比海盗5：死无对证</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a id="mummy" href="/movie/getPlan.html?movieName=新木乃伊">新木乃伊</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <!--<a href="">摔跤吧！爸爸</a>&nbsp;&nbsp;&nbsp;-->
-
+<%--<a>aaaaaaa</a>--%>
 </div>
 
 <script>
