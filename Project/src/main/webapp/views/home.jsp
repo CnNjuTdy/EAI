@@ -70,17 +70,17 @@
 <br>
 
 <div id="film_list">
-    <a id="wonder" href="" onclick="wonder()">神奇女侠</a>&nbsp;&nbsp;&nbsp;
-    <a id="pirates" href="" onclick="detail()">加勒比海盗5：死无对证</a>&nbsp;&nbsp;&nbsp;
-    <a id="mummy" href="" onclick="detail()">新木乃伊</a>&nbsp;&nbsp;&nbsp;
+    <a id="wonder" href="/movie/getPlan?movieName=">神奇女侠</a>&nbsp;&nbsp;&nbsp;
+    <a id="pirates" href="/movie/getPlan?movieName=">加勒比海盗5：死无对证</a>&nbsp;&nbsp;&nbsp;
+    <a id="mummy" href="/movie/getPlan?movieName=">新木乃伊</a>&nbsp;&nbsp;&nbsp;
     <!--<a href="">摔跤吧！爸爸</a>&nbsp;&nbsp;&nbsp;-->
 
 </div>
 
 <script>
-    function wonder() {
-        window.location.href = "wonder";
-    }
+//    function wonder() {
+//        window.location.href = "wonder";
+//    }
 </script>
 </body>
 </html>

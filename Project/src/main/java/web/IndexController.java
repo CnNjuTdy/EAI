@@ -4,9 +4,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
-import spider.GewaraSpider;
-
-import javax.annotation.Resource;
 
 /**
  * Created by Tondiyee on 2017/6/1.
@@ -15,9 +12,9 @@ import javax.annotation.Resource;
 //@RequestMapping("/top")
 public class IndexController  {
 
-    @Resource(name = "GewaraSpider")
-    GewaraSpider gewaraSpider;
-
+//    @Resource(name = "GewaraSpider")
+//    GewaraSpider gewaraSpider;
+//
     @RequestMapping(value = "/home",method = RequestMethod.GET)
     public ModelAndView index(){
 
