@@ -1,9 +1,6 @@
 package web;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.servlet.ModelAndView;
 
 /**
  * Created by Tondiyee on 2017/6/1.
@@ -15,12 +12,12 @@ public class IndexController  {
 //    @Resource(name = "GewaraSpider")
 //    GewaraSpider gewaraSpider;
 //
-    @RequestMapping(value = "/home",method = RequestMethod.GET)
-    public ModelAndView index(){
-
-        return new ModelAndView("index");
-    }
-
+//    @RequestMapping(value = "/home",method = RequestMethod.GET)
+//    public ModelAndView index(){
+//
+//        return new ModelAndView("index");
+//    }
+//
 //    @RequestMapping(value = "/wonder",method = RequestMethod.GET)
 //    public ModelAndView wonder(HttpServletRequest request){
 //        String wonder = request.getParameter("wonder");
