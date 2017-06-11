@@ -11,7 +11,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Repository;
 import util.DateUtil;
 
 import java.io.IOException;
@@ -22,7 +22,7 @@ import java.util.List;
 /**
  * Created by fulinhua on 2017/6/10.
  */
-@Service
+@Repository
 public class GewaraSpider {
     @Autowired
     private CinemaDao dao1;
@@ -39,7 +39,7 @@ public class GewaraSpider {
     fyrq:放映日期
     cid:影院ID
      */
-    public static List<GewalaPlan> getData(HashMap<String, String> parms) throws IOException {
+    public static List<GewalaPlan> getData(HashMap<String, String> parms,String movieName,String cinemaName) throws IOException {
 
         List<GewalaPlan> result = new ArrayList<>();
         Document doc = Jsoup.connect(URL).header("User-Agent", "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.4; en-US; rv:1.9.2.2) Gecko/20100316 Firefox/3.6.2").data(parms).get();
@@ -52,7 +52,8 @@ public class GewaraSpider {
             GewalaPlan gewalaPlan = new GewalaPlan();
             gewalaPlan.setcId(Integer.parseInt(parms.get("cid")));
             gewalaPlan.setmId(Integer.parseInt(parms.get("movieid")));
-            gewalaPlan.setcName(cName);
+            gewalaPlan.setcName(cinemaName);
+            gewalaPlan.setmName(movieName);
             gewalaPlan.setDate(parms.get("fyrq"));
 
             Elements ems = li.select("em");
@@ -80,8 +81,12 @@ for(int i=0;i<input.length()-1;i++){
 
 }
 
+    public List<GewalaPlan> getPlansByDB(String movieName){
+        return dao3.findByName(movieName);
+    }
 
-    public void getPlans() throws IOException {
+
+    public void getPlansBySpider() throws IOException {
         List<Cinema> cinemas = dao1.findAll();
         List<Movie> movies = dao2.findAll();
         for (Cinema cinema : cinemas) {
@@ -92,7 +97,7 @@ for(int i=0;i<input.length()-1;i++){
                 params.put("cid", cinema.getGewalaId() + "");
 
 
-                List<GewalaPlan> list = getData(params);
+                List<GewalaPlan> list = getData(params,movie.getName(),cinema.getName());
                 // TODO: 2017/6/10  doc转plan
                 for (GewalaPlan ge : list)
                    dao3.save(ge);
@@ -100,4 +105,6 @@ for(int i=0;i<input.length()-1;i++){
             }
         }
     }
+
+
 }

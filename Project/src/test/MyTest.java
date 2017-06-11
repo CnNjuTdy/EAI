@@ -1,11 +1,13 @@
 import dao.BaseDao;
 import dao.CinemaDao;
+import entity.UniformPlan;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import service.SearchMovieService;
 import spider.GewaraSpider;
 import spider.MaoyanSpider;
 import spider.TaopiaopiaoSpider;
@@ -32,6 +34,9 @@ public class MyTest {
 
     @Autowired
     private CinemaDao dao2;
+
+    @Autowired
+    private SearchMovieService searchMovieService;
 
 
 //    @Test
@@ -84,19 +89,28 @@ public class MyTest {
     }
 
     @Test
-    public void test6(){
+    public void initialGewalaPlan(){
         try {
-            spider2.getPlans();
+            spider2.getPlansBySpider();
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
     @Test
-    public void test7(){
+    public void initialTaobaoPlan(){
         try {
-            taobaospider.getPlans();
+            taobaospider.getPlansBySpider();
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
+
+    @Test
+    public void test8(){
+       List<UniformPlan> list= searchMovieService.getPlansByMovie("新木乃伊");
+        for(UniformPlan uniform:list){
+            System.out.println(uniform.toString());
+        }
+    }
+
 }
