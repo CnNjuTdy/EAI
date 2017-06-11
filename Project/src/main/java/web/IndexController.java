@@ -7,8 +7,6 @@ import org.springframework.web.servlet.ModelAndView;
 import spider.GewaraSpider;
 
 import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
-import java.io.IOException;
 
 /**
  * Created by Tondiyee on 2017/6/1.
@@ -26,15 +24,15 @@ public class IndexController  {
         return new ModelAndView("index");
     }
 
-    @RequestMapping(value = "/wonder",method = RequestMethod.GET)
-    public ModelAndView wonder(HttpServletRequest request){
-        String wonder = request.getParameter("wonder");
-        try {
-            gewaraSpider.getPlans();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return new ModelAndView("wonder");
-    }
+//    @RequestMapping(value = "/wonder",method = RequestMethod.GET)
+//    public ModelAndView wonder(HttpServletRequest request){
+//        String wonder = request.getParameter("wonder");
+//        try {
+//            gewaraSpider.getPlans();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//        return new ModelAndView("wonder");
+//    }
 
 }
