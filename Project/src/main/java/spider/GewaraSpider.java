@@ -85,6 +85,7 @@ for(int i=0;i<input.length()-1;i++){
         return dao3.findByName(movieName);
     }
 
+    public List<GewalaPlan> getPlansByCinema(String cinemaName){return dao3.findByCinemaName(cinemaName);}
 
     public void getPlansBySpider() throws IOException {
         List<Cinema> cinemas = dao1.findAll();

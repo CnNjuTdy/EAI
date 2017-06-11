@@ -19,4 +19,10 @@ public class GewalaPlanDao extends BaseDao {
         parms[0]=movieName;
         return findBySQL("select * from gewala_plan where m_name=?",parms,GewalaPlan.class);
     }
+
+    public List<GewalaPlan> findByCinemaName(String cinemaName) {
+        String[] parms=new String[1];
+        parms[0]=cinemaName;
+        return findBySQL("select * from gewala_plan where c_name=?",parms,GewalaPlan.class);
+    }
 }

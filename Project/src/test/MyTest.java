@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import service.SearchCinemaService;
 import service.SearchMovieService;
 import spider.GewaraSpider;
 import spider.MaoyanSpider;
@@ -37,6 +38,9 @@ public class MyTest {
 
     @Autowired
     private SearchMovieService searchMovieService;
+
+    @Autowired
+    private SearchCinemaService searchCinemaService;
 
 
 //    @Test
@@ -108,6 +112,14 @@ public class MyTest {
     @Test
     public void test8(){
        List<UniformPlan> list= searchMovieService.getPlansByMovie("新木乃伊");
+        for(UniformPlan uniform:list){
+            System.out.println(uniform.toString());
+        }
+    }
+
+    @Test
+    public void test9(){
+        List<UniformPlan> list= searchCinemaService.getPlansByCinema("UME国际影城(玄武门店)");
         for(UniformPlan uniform:list){
             System.out.println(uniform.toString());
         }
