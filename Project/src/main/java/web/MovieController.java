@@ -30,14 +30,29 @@ public class MovieController {
 
     @RequestMapping(value="/getPlan")
     public String inputBook(ModelMap model, String movieName){
-        System.out.println("hhhhhhhhh");
+//        System.out.println("hhhhhhhhh");
         System.out.println(movieName);
 //        String movieName = request.getParameter("wonder");
         List<UniformPlan> datalist=searchMovieService.getPlansByMovie(movieName);
         model.addAttribute("datalist",datalist);
+//        model.put("datalist",datalist);
         System.out.println(datalist.size());
-        for (int i=0;i<datalist.size();i++)
-            System.out.println(datalist.get(i).getcName());
+//        int ume=0,jinyi=0,lu=0,peace=0;
+//        for (int i=0;i<datalist.size();i++) {
+//            switch (datalist.get(i).getcName()){
+//                case "UME国际影城(玄武门店)":ume++;break;
+//                case "金逸影城(大观店)":jinyi++;break;
+//                case "卢米埃影城(紫峰店)":lu++;break;
+//                case "和平影视娱乐城":peace++;break;
+//                default:break;
+//            }
+//            System.out.println(datalist.get(i));
+//        }
+//        System.out.println(ume+" " +jinyi+" "+lu+" "+peace+" ");
+//        model.addAttribute("ume",ume);
+//        model.addAttribute("jinyi",jinyi);
+//        model.addAttribute("lu",lu);
+//        model.addAttribute("peace",peace);
         return "showData";
     }
 

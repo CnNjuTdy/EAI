@@ -3,18 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="ce84a710-97a6-4b8f-ae7b-e46c8e3f8076" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/target/classes/web/MovieController.class" afterPath="$PROJECT_DIR$/Project/target/classes/web/MovieController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/target/eai/WEB-INF/classes/MyTest.class" afterPath="$PROJECT_DIR$/Project/target/eai/WEB-INF/classes/MyTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/target/eai/WEB-INF/classes/dao/GewalaPlanDao.class" afterPath="$PROJECT_DIR$/Project/target/eai/WEB-INF/classes/dao/GewalaPlanDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/target/eai/WEB-INF/classes/spider/GewaraSpider.class" afterPath="$PROJECT_DIR$/Project/target/eai/WEB-INF/classes/spider/GewaraSpider.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/target/eai/WEB-INF/classes/web/MovieController.class" afterPath="$PROJECT_DIR$/Project/target/eai/WEB-INF/classes/web/MovieController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/src/main/java/web/MovieController.java" afterPath="$PROJECT_DIR$/Project/src/main/java/web/MovieController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/src/main/resources/spring/spring-hibernate.xml" afterPath="$PROJECT_DIR$/Project/src/main/resources/spring/spring-hibernate.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/src/main/webapp/views/home.jsp" afterPath="$PROJECT_DIR$/Project/src/main/webapp/views/home.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/src/main/webapp/views/showData.jsp" afterPath="$PROJECT_DIR$/Project/src/main/webapp/views/showData.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/target/classes/spring/spring-hibernate.xml" afterPath="$PROJECT_DIR$/Project/target/classes/spring/spring-hibernate.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/target/eai/views/home.jsp" afterPath="$PROJECT_DIR$/Project/target/eai/views/home.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/target/eai/views/showData.jsp" afterPath="$PROJECT_DIR$/Project/target/eai/views/showData.jsp" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
@@ -79,8 +71,8 @@
       <file leaf-file-name="MovieController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project/src/main/java/web/MovieController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+            <state relative-caret-position="275">
+              <caret line="44" column="47" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -118,8 +110,8 @@
       <file leaf-file-name="showData.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Project/src/main/webapp/views/showData.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+            <state relative-caret-position="-1150">
+              <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -164,8 +156,8 @@
         <option value="$PROJECT_DIR$/Project/src/main/resources/spring/spring-hibernate.xml" />
         <option value="$PROJECT_DIR$/Project/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/Project/src/main/webapp/views/home.jsp" />
-        <option value="$PROJECT_DIR$/Project/src/main/webapp/views/showData.jsp" />
         <option value="$PROJECT_DIR$/Project/src/main/java/web/MovieController.java" />
+        <option value="$PROJECT_DIR$/Project/src/main/webapp/views/showData.jsp" />
       </list>
     </option>
   </component>
@@ -1228,7 +1220,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1497168242077</updated>
-      <workItem from="1497168243448" duration="3896000" />
+      <workItem from="1497168243448" duration="8992000" />
     </task>
     <servers />
   </component>
@@ -1247,7 +1239,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5636000" />
+    <option name="totallyTimeSpent" value="10732000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -1735,8 +1727,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Project/src/main/java/web/MovieController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+        <state relative-caret-position="275">
+          <caret line="44" column="47" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1745,8 +1737,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Project/src/main/webapp/views/showData.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+        <state relative-caret-position="-1150">
+          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
           <folding />
         </state>
       </provider>
