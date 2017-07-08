@@ -19,7 +19,7 @@ public class Maoyan {
 
     public static void main(String[] args) throws IOException, InterruptedException {
         Maoyan maoyan=new Maoyan();
-      List<MaoyanComment> list= maoyan.getComments("246012");
+        List<MaoyanComment> list= maoyan.getComments("246012");
         System.out.println(list.size());
         for(MaoyanComment comment:list){
             System.out.println(comment);
@@ -51,7 +51,7 @@ public class Maoyan {
     public List getComments(String movieId) throws IOException, InterruptedException {
                 String url = "http://m.maoyan.com/comments.json";
         List<MaoyanComment> commentList=new ArrayList<>();
-      String[] tag=getMovieNameAndTag(movieId);
+        String[] tag=getMovieNameAndTag(movieId);
        // System.out.println(tag[0]+" "+tag[1]);
         for(int i=0;i<65;i++){
             HashMap<String, String> params = new HashMap<>();
@@ -64,8 +64,8 @@ public class Maoyan {
             JSONArray dataShows = new JSONObject(doc.body().text()).getJSONObject("data").getJSONObject("CommentResponseModel").getJSONArray("cmts");
             for(Object obj:dataShows){
                 MaoyanComment comment =new MaoyanComment();
-                comment.setMovieName(tag[0]);
-                comment.setTag(tag[1]);
+//                comment.setMovieName(tag[0]);
+//                comment.setTag(tag[1]);
                JSONObject jsonObject=(JSONObject) obj;
                 comment.setScore(Double.parseDouble(jsonObject.get("score").toString()));
                 comment.setComment(jsonObject.get("content").toString());

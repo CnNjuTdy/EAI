@@ -5,7 +5,7 @@ package entity;
  */
 public class DoubanComment {
     private int id;
-    private int movieId;
+    private String movieId;
     private String name;
     private double score;
     private String comment;
@@ -18,11 +18,11 @@ public class DoubanComment {
         this.id = id;
     }
 
-    public int getMovieId() {
+    public String getMovieId() {
         return movieId;
     }
 
-    public void setMovieId(int movieId) {
+    public void setMovieId(String movieId) {
         this.movieId = movieId;
     }
 

@@ -24,6 +24,7 @@ public class Douban {
             System.out.println(comment);
         }
     }
+
     public String[] getMovieNameAndTag(String movieId) throws IOException {
         HashMap<String, String> params = new HashMap<>();
         String url="https://api.douban.com/v2/movie/subject/"+movieId;
@@ -81,8 +82,9 @@ public class Douban {
             JSONArray array = new JSONObject(doc.body().text()).getJSONArray("comments");
             for(Object obj:array){
                 DoubanComment comment =new DoubanComment();
-                comment.setMovieName(movieInfo[0]);
-                comment.setTag(movieInfo[1]);
+
+//                comment.setMovieName(movieInfo[0]);
+//                comment.setTag(movieInfo[1]);
                 JSONObject jsonObject=(JSONObject) obj;
                comment.setScore(Double.parseDouble(jsonObject.getJSONObject("rating").get("value").toString()));
                 comment.setComment(jsonObject.get("content").toString());
