@@ -1,17 +1,10 @@
 import dao.BaseDao;
-import dao.CinemaDao;
-import entity.UniformPlan;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import service.SearchCinemaService;
-import service.SearchMovieService;
-import spider.GewaraSpider;
-import spider.MaoyanSpider;
-import spider.TaopiaopiaoSpider;
 
 import java.io.IOException;
 import java.util.List;

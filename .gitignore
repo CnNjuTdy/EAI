@@ -28,3 +28,7 @@ Project/eai.iml
 >>>>>>> origin/master
 
 Project/src/main/resources/spring/spring-hibernate.xml
+
+*.xml
+
+*.xml
