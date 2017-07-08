@@ -48,7 +48,7 @@ public class Maoyan {
                 comment.setMovieId(id);
                 comment.setScore(Double.parseDouble(jsonObject.get("score").toString()));
                 comment.setComment(jsonObject.get("content").toString());
-                comment.setPreScore(service.getMark(comment.getComment()));
+                comment.setPreScore(0);
                 commentList.add(comment);
             }
             System.out.println("第" + i + "次");

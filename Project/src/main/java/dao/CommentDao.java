@@ -26,7 +26,11 @@ public class CommentDao extends BaseDao {
         try {
             for (Movie movie : movies) {
                 List<Comment> comments = maoyan.getComments(movie.getMaoyanId() + "", movie.getId() + "");
-                System.out.println(comments.size());
+
+                for (Comment comment : comments) {
+                    Object[] params = {comment.getMovieId(), comment.getScore(), comment.getComment(), comment.getPreScore()};
+                    updateBySQL("insert into comment(movie_id,score,comment,preScore) values(?,?,?,?)", params);
+                }
             }
         } catch (IOException e) {
             e.printStackTrace();
