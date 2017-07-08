@@ -34,3 +34,10 @@ Project/src/main/resources/spring/spring-hibernate.xml
 *.xml
 
 *.xml
+<<<<<<< HEAD
+=======
+
+*.xml
+
+.idea/workspace.xml
+>>>>>>> origin/master
