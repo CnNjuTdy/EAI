@@ -4,25 +4,43 @@ package entity;
  * Created by fulinhua on 2017/7/8.
  */
 public class DoubanComment {
-    private String movieName;
+    private int id;
+    private int movieId;
+    private String name;
+    private double score;
+    private String comment;
 
-    public String getMovieName() {
-        return movieName;
+    public int getId() {
+        return id;
     }
 
-    public void setMovieName(String movieName) {
-        this.movieName = movieName;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public String getTag() {
-        return tag;
+    public int getMovieId() {
+        return movieId;
     }
 
-    public void setTag(String tag) {
-        this.tag = tag;
+    public void setMovieId(int movieId) {
+        this.movieId = movieId;
     }
 
+    public String getName() {
+        return name;
+    }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getScore() {
+        return score;
+    }
+
+    public void setScore(double score) {
+        this.score = score;
+    }
 
     public String getComment() {
         return comment;
@@ -32,21 +50,10 @@ public class DoubanComment {
         this.comment = comment;
     }
 
-    private String tag;
 
-    public double getScore() {
-        return Score;
-    }
-
-    public void setScore(double score) {
-        Score = score;
-    }
-
-    private double Score;
-    private String comment;
     public String toString(){
 
-        return "电影:"+movieName+" 类型:"+tag+" 打分:"+Score+" 评论:"+comment;
+        return "电影:"+name+" 打分:"+score+" 评论:"+comment;
 
     }
 }
