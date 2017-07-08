@@ -5,7 +5,7 @@ package entity;
  */
 public class MaoyanComment {
     private int id;
-    private int movieId;
+    private String movieId;
     private String name;
     private double score;
     private String comment;
@@ -18,11 +18,11 @@ public class MaoyanComment {
         this.id = id;
     }
 
-    public int getMovieId() {
+    public String getMovieId() {
         return movieId;
     }
 
-    public void setMovieId(int movieId) {
+    public void setMovieId(String movieId) {
         this.movieId = movieId;
     }
 
@@ -42,11 +42,11 @@ public class MaoyanComment {
         this.score = score;
     }
 
-    public String getCommentl() {
+    public String getComment() {
         return comment;
     }
 
-    public void setCommentl(String comment) {
+    public void setComment(String comment) {
         this.comment = comment;
     }
 
