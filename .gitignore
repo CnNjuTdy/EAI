@@ -7,6 +7,7 @@
 
 *.xml
 
+<<<<<<< HEAD
 *.class
 
 *.xml
@@ -22,3 +23,8 @@ Project/eai.iml
 *.xml
 
 *.iml
+=======
+*.xml
+>>>>>>> origin/master
+
+Project/src/main/resources/spring/spring-hibernate.xml
