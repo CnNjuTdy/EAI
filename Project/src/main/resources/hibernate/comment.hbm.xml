@@ -1,0 +1,11 @@
+<hibernate-mapping package="entity">
+    <class name="Comment" table="comment">
+        <id name="id" column="id" type="long">
+            <generator class="identity" />
+        </id>
+        <property name="movieId" column="movie_id"/>
+        <property name="score" column="score"/>
+        <property name="comment" column="comment"/>
+        <property name="preScore" column="preScore"/>
+    </class>
+</hibernate-mapping>

@@ -1,4 +1,5 @@
 import dao.BaseDao;
+import dao.CommentDao;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,5 +16,11 @@ import java.util.List;
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {"classpath:spring/spring-core.xml", "classpath*:spring/spring-hibernate.xml"})
 public class MyTest {
+    @Autowired
+    CommentDao commentDao;
 
+    @Test
+    public void test1(){
+        commentDao.saveAll();
+    }
 }

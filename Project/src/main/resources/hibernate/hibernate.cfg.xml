@@ -6,9 +6,7 @@
     <session-factory>
         <!-- DB schema will be updated if needed -->
         <!-- <property name="hbm2ddl.auto">update</property> -->
-        <mapping resource="hibernate/cinema.hbm.xml"/>
         <mapping resource="hibernate/movie.hbm.xml"/>
-        <mapping resource="hibernate/GewalaPlan.hbm.xml"/>
-        <mapping resource="hibernate/TaoppPlan.hbm.xml"/>
+        <mapping resource="hibernate/comment.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>

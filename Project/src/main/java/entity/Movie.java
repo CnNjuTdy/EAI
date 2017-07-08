@@ -7,17 +7,11 @@ public class Movie {
     private int id;
     private int maoyanId;
     private int doubanId;
-    private String name;
 
-    public String getName() {
-        return name;
-    }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setDoubanId(int doubanId) {
+    public Movie(int id, int maoyanId, int doubanId) {
+        this.id = id;
+        this.maoyanId = maoyanId;
         this.doubanId = doubanId;
     }
 
@@ -40,12 +34,11 @@ public class Movie {
         this.maoyanId = maoyanId;
     }
 
+    public int getDoubanId() {
+        return doubanId;
+    }
 
-    @Override
-    public String toString() {
-        return "Movie{" +
-                "id=" + id +
-                ", maoyanId=" + maoyanId +
-                ", doubanId=" + doubanId;
+    public void setDoubanId(int doubanId) {
+        this.doubanId = doubanId;
     }
 }

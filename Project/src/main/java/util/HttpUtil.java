@@ -20,7 +20,7 @@ public class HttpUtil {
     public static void setProxyIp() {
         try {
             List<String> ipList = new ArrayList<>();
-            BufferedReader proxyIpReader = new BufferedReader(new InputStreamReader(HttpUtil.class.getResourceAsStream("/proxyip.txt")));
+            BufferedReader proxyIpReader = new BufferedReader(new InputStreamReader(HttpUtil.class.getResourceAsStream("/dic/proxyip.txt")));
 
             String ip = "";
             while ((ip = proxyIpReader.readLine()) != null) {
