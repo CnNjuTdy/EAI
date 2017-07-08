@@ -202,6 +202,6 @@ public class MovieMarkServiceImpl implements MovieMarkService{
     public static void main(String[] args) {
         MovieMarkServiceImpl movieMark = new MovieMarkServiceImpl();
         System.out.println(movieMark.getMark("电影还行，不过看来看去感觉都是一个套路，没有惊喜"));
-        System.out.println(movieMark.getMark("这个电影非常好看"));
+        System.out.println(movieMark.getMark("这个电影很不错"));
     }
 }

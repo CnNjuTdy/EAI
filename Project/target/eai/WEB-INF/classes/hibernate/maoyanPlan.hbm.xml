@@ -1,0 +1,12 @@
+<hibernate-mapping package="entity">
+    <class name="MaoyanPlan" table="maoyan_plan">
+        <id name="id" column="id"/>
+        <property name="cName" column="c_name"/>
+        <property name="mName" column="m_name"/>
+        <property name="date" column="date"/>
+        <property name="start" column="start"/>
+        <property name="end" column="end"/>
+        <property name="th" column="th"/>
+        <property name="price" column="price"/>
+    </class>
+</hibernate-mapping>
