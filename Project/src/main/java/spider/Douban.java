@@ -57,6 +57,14 @@ public class Douban {
         return connection;
     }
 
+
+    /**
+     * 根据doubanID获得影评
+     * @param movieId
+     * @return
+     * @throws IOException
+     * @throws InterruptedException
+     */
     public List<DoubanComment> getComments(String movieId) throws IOException, InterruptedException {
         String url = "https://api.douban.com/v2/movie/subject/"+movieId+"/comments";
         List<DoubanComment> commentList=new ArrayList<>();

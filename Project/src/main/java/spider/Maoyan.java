@@ -41,6 +41,13 @@ public class Maoyan {
         return result;
     }
 
+    /**
+     * 根据猫眼ID获得影评
+     * @param movieId
+     * @return
+     * @throws IOException
+     * @throws InterruptedException
+     */
     public List getComments(String movieId) throws IOException, InterruptedException {
                 String url = "http://m.maoyan.com/comments.json";
         List<MaoyanComment> commentList=new ArrayList<>();

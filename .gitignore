@@ -32,3 +32,9 @@ Project/src/main/resources/spring/spring-hibernate.xml
 *.xml
 
 *.xml
+
+*.xml
+
+*.xml
+
+.idea/workspace.xml
